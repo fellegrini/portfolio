@@ -2,10 +2,10 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>
+    <section className='projects'>
       <h1>Projects Page</h1>
       <p>Welcome to the Projects page! Branch test</p>
-    </div>
+    </section>
   );
 }
 

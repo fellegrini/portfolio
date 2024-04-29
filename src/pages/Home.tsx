@@ -1,11 +1,9 @@
-import React from 'react';
-
 function Home() {
   return (
-    <div>
+    <section className='home'>
       <h1>Home Page</h1>
       <p>Welcome to my portfolio website!</p>
-    </div>
+    </section>
   );
 }
 
