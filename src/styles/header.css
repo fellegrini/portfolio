@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.header--text {
+  font-family: 'Optik Sans', 'Bebas Neue', sans-serif;
+  font-size: 128px;
+  font-display: swap;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 50%;
+}
+
+.navbar--button {
+  background-color: var(--grey);
+  border: none;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  width: 48px;
+  height: 16px;
+}
+
+.navbar--nav.active .navbar--button {
+  background-color: var(--white);
+}

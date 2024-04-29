@@ -1,12 +1,7 @@
 import React from 'react';
 
 function Home() {
-  return (
-    <section className='about'>
-      <h1>About Page</h1>
-      <p>Welcome to the About page!</p>
-    </section>
-  );
+  return <section className='about'></section>;
 }
 
 export default Home;

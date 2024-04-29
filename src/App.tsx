@@ -1,18 +1,29 @@
+import { useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import WorkExp from './pages/WorkExp';
 import Projects from './pages/Projects';
 import Container from './components/container';
+import Header from './components/header';
 
 // Define the App component
 function App() {
+  const [activeSection, setActiveSection] = useState('');
+
+  const activeSectionHook = (section: string) => {
+    setActiveSection(section);
+  };
+
   return (
-    <Container>
-      <Home />
-      <About />
-      <WorkExp />
-      <Projects />
-    </Container>
+    <>
+      <Header activeSection={activeSection} />
+      <Container activeSectionHook={activeSectionHook}>
+        <Home />
+        <About />
+        <WorkExp />
+        <Projects />
+      </Container>
+    </>
   );
 }
 
