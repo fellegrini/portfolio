@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Home() {
-  return <section className='about'></section>;
+  return <section id='about' className='about'></section>;
 }
 
 export default Home;

@@ -1,0 +1,14 @@
+.container {
+  max-height: 100vh;
+  overflow-y: auto; /* Prevents unwanted scrollbars on Linux machines */
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+  }
+}

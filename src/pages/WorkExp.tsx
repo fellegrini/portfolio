@@ -1,5 +1,5 @@
 function WorkExp() {
-  return <section className='workexp'></section>;
+  return <section id='workexp' className='workexp'></section>;
 }
 
 export default WorkExp;

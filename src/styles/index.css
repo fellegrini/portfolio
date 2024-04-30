@@ -121,14 +121,11 @@ video {
   vertical-align: baseline;
 }
 
-.container {
-  max-height: 100vh;
-  overflow-y: auto; /* Prevents unwanted scrollbars on Linux machines */
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  position: relative;
-  scroll-behavior: smooth;
+button {
+  border: none;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
 }
 
 section {

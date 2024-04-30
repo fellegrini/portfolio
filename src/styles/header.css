@@ -9,6 +9,7 @@
   justify-content: space-between;
   padding: 0 2em;
   color: var(--white);
+  pointer-events: none;
 }
 
 .header--text {
@@ -23,14 +24,11 @@
   align-items: center;
   gap: 24px;
   width: 50%;
+  pointer-events: auto;
 }
 
 .navbar--button {
   background-color: var(--grey);
-  border: none;
-  font-family: inherit;
-  padding: 0;
-  cursor: pointer;
   width: 48px;
   height: 16px;
 }

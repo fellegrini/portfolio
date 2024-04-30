@@ -5,6 +5,7 @@ import WorkExp from './pages/WorkExp';
 import Projects from './pages/Projects';
 import Container from './components/container';
 import Header from './components/header';
+import Sidebar from './components/sidebar';
 
 // Define the App component
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <>
       <Header activeSection={activeSection} />
       <Container activeSectionHook={activeSectionHook}>
+        <Sidebar />
         <Home />
         <About />
         <WorkExp />

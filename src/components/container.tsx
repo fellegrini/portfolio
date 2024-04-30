@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ReactElement } from 'react';
+import '../styles/container.css';
 
 function Container({
   children,
@@ -17,7 +18,7 @@ function Container({
         autoAlpha: 1,
         background: '#000',
         ease: 'back.in',
-        duration: 0.5,
+        duration: 0.4,
         scrollTrigger: {
           trigger: section,
           start: 'top 20%',

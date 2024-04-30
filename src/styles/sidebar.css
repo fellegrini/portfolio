@@ -1,0 +1,22 @@
+.sidebar {
+  height: 100%;
+  background-color: var(--green);
+  width: 360px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  border-left: 24px solid var(--white);
+}
+
+.sidebar--button {
+  height: 198px;
+  width: 198px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  left: -111px;
+  border: 24px solid var(--white);
+}
