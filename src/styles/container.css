@@ -12,3 +12,8 @@
     scroll-snap-stop: always;
   }
 }
+
+section {
+  opacity: 0;
+  visibility: hidden;
+}

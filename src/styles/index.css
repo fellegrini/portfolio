@@ -18,6 +18,9 @@
   --grey: #919191;
   --red: #c14040;
   --green: #58ac3a;
+  --border-8: 8px solid var(--white);
+  --border-16: 16px solid var(--white);
+  --border-24: 24px solid var(--white);
 }
 
 * {

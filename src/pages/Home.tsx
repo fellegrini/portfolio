@@ -5,13 +5,12 @@ import '../styles/home.css';
 function Home() {
   useGSAP(() => {
     gsap.to('.cosito', {
-      autoAlpha: 1,
       y: 500,
       ease: 'power3.inOut',
       duration: 0.5,
       scrollTrigger: {
         trigger: '.cosito',
-        markers: true,
+        // markers: true,
         scrub: 2,
         start: 'top top',
         end: 'bottom 65%',
