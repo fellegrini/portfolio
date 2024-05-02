@@ -1,11 +1,12 @@
 import '../styles/sidebar.css';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import MainHeadline from './main-headline';
 import CrossIcon from '../assets/icons/cross';
 import { LinkedinIcon } from '../assets/icons/linkedin';
 import { GmailIcon } from '../assets/icons/gmail';
 import { GithubIcon } from '../assets/icons/github';
+import { useGSAP } from '@gsap/react';
 
 enum Colors {
   red = '#c14040',
@@ -14,24 +15,62 @@ enum Colors {
 
 function Sidebar() {
   const [isActive, setIsActive] = useState(false);
+  const timeline = useRef<GSAPTimeline>();
 
-  const isActiveToggle = () => {
-    isActive ? timeline.play() : timeline.reverse();
+  function isActiveToggle() {
     setIsActive(!isActive);
-  };
+  }
 
-  const timeline = gsap.timeline();
-  timeline.fromTo(
-    '.sidebar--button',
-    {
-      rotate: 0,
-    },
-    {
-      rotate: 90,
-      duration: 3,
-      ease: 'elastic.inOut',
-    },
-  );
+  useGSAP(() => {
+    timeline.current = gsap.timeline({ paused: true });
+    timeline.current
+      .add('sidebarAnimation', '+=0')
+      .fromTo(
+        '.sidebar--button',
+        {
+          rotate: 45,
+        },
+        {
+          rotate: 180,
+          ease: 'power2',
+        },
+        'sidebarAnimation',
+      )
+      .fromTo(
+        '.icon-cross',
+        {
+          fill: Colors.green,
+        },
+        {
+          fill: Colors.red,
+        },
+        'sidebarAnimation',
+      )
+      .fromTo(
+        '.sidebar--socials',
+        {
+          y: -500,
+        },
+        {
+          y: 0,
+        },
+        'sidebarAnimation',
+      )
+      .fromTo(
+        '.sidebar--headline',
+        {
+          y: 500,
+        },
+        {
+          y: 0,
+        },
+        'sidebarAnimation',
+      );
+  }, []);
+
+  useGSAP(() => {
+    isActive ? timeline.current?.play() : timeline.current?.reverse();
+  }, [isActive]);
 
   return (
     <aside className='sidebar'>
@@ -40,7 +79,7 @@ function Sidebar() {
         onClick={isActiveToggle}
         className='sidebar--button'
       >
-        <CrossIcon fill={isActive ? Colors.red : Colors.green} />
+        <CrossIcon />
       </button>
       <div className='sidebar--panels'>
         <div className='sidebar--socials sidebar--socials-vertical'>
