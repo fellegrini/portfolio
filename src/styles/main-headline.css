@@ -1,0 +1,27 @@
+.main-headline--headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-headline--subheadline {
+  font-family: 'Optik Sans', 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-headline--small {
+  transform: rotate(-90deg);
+  margin-bottom: 44px;
+}
+
+.main-headline--small .main-headline--headline {
+  font-size: 64px;
+  line-height: 0.8;
+}
+
+.main-headline--small .main-headline--subheadline {
+  font-size: 18px;
+  line-height: 0.8;
+  margin-left: 2px;
+}

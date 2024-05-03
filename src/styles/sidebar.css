@@ -42,14 +42,18 @@
   display: flex;
   justify-content: center;
   padding: 80px 0;
+  pointer-events: none;
 }
 
 .sidebar--socials {
   align-items: center;
   border-bottom: var(--border-8);
-  pointer-events: auto;
   justify-content: flex-start;
   gap: 36px;
+}
+
+.sidebar--socials a {
+  pointer-events: auto;
 }
 
 .sidebar--socials-vertical {
@@ -64,4 +68,5 @@
 .sidebar--headline {
   align-items: flex-end;
   border-top: var(--border-8);
+  padding-bottom: 64px;
 }

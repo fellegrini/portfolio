@@ -1,7 +1,7 @@
 import '../styles/sidebar.css';
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
-import MainHeadline from './main-headline';
+import MainHeadline from './MainHeadline';
 import CrossIcon from '../assets/icons/cross';
 import { LinkedinIcon } from '../assets/icons/linkedin';
 import { GmailIcon } from '../assets/icons/gmail';
@@ -17,9 +17,9 @@ function Sidebar() {
   const [isActive, setIsActive] = useState(false);
   const timeline = useRef<GSAPTimeline>();
 
-  function isActiveToggle() {
+  const isActiveToggle = () => {
     setIsActive(!isActive);
-  }
+  };
 
   useGSAP(() => {
     timeline.current = gsap.timeline({ paused: true });
@@ -50,9 +50,11 @@ function Sidebar() {
         '.sidebar--socials',
         {
           y: -500,
+          autoAlpha: 0,
         },
         {
           y: 0,
+          autoAlpha: 1,
         },
         'sidebarAnimation',
       )
@@ -60,9 +62,11 @@ function Sidebar() {
         '.sidebar--headline',
         {
           y: 500,
+          autoAlpha: 0,
         },
         {
           y: 0,
+          autoAlpha: 1,
         },
         'sidebarAnimation',
       );
@@ -75,7 +79,7 @@ function Sidebar() {
   return (
     <aside className='sidebar'>
       <button
-        aria-label={isActive ? 'Enter the site' : 'Go back'}
+        aria-label={!isActive ? 'Enter the site' : 'Go back'}
         onClick={isActiveToggle}
         className='sidebar--button'
       >

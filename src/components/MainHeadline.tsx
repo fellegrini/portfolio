@@ -1,3 +1,5 @@
+import '../styles/main-headline.css';
+
 function MainHeadline({ type = 'big' }: { type: string }) {
   return (
     <div
