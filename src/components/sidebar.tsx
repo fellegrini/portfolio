@@ -78,13 +78,16 @@ function Sidebar() {
 
   return (
     <aside className='sidebar'>
-      <button
-        aria-label={!isActive ? 'Enter the site' : 'Go back'}
-        onClick={isActiveToggle}
-        className='sidebar--button'
-      >
-        <CrossIcon />
-      </button>
+      <div className='sidebar--button-container'>
+        <div className='sidebar--sc'></div>
+        <button
+          aria-label={!isActive ? 'Enter the site' : 'Go back'}
+          onClick={isActiveToggle}
+          className='sidebar--button'
+        >
+          <CrossIcon />
+        </button>
+      </div>
       <div className='sidebar--panels'>
         <div className='sidebar--socials sidebar--socials-vertical'>
           {/* Replace with prop (vertical, default) after Socials component creation ¨*/}

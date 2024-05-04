@@ -1,3 +1,7 @@
+.main-headline {
+  color: var(--white);
+}
+
 .main-headline--headline {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;

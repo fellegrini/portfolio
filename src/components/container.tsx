@@ -16,7 +16,7 @@ function Container({
     sectionList.forEach((section) => {
       gsap.to(section, {
         autoAlpha: 1,
-        background: '#000',
+        /* background: '#000', */
         ease: 'back.in',
         duration: 0.4,
         scrollTrigger: {
