@@ -1,0 +1,22 @@
+.facade {
+  height: 100vh;
+  width: calc(100% - 215px);
+  border-right: var(--border-8);
+  background-color: var(--black);
+  z-index: 4;
+  position: fixed;
+  padding-left: 120px;
+}
+
+.facade--container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socials {
+  margin: 24px 0 0 4px;
+}

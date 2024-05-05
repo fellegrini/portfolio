@@ -1,15 +1,21 @@
 import { useState } from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import WorkExp from './pages/WorkExp';
-import Projects from './pages/Projects';
-import Container from './components/Container';
+import Facade from './components/Facade';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import Container from './components/Container';
+import About from './pages/About';
+import Tech from './pages/Tech';
+import WorkExp from './pages/WorkExp';
+import Projects from './pages/Projects';
 
 // Define the App component
 function App() {
   const [activeSection, setActiveSection] = useState('');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const sidebarTriggerHook = (value: boolean) => {
+    setSidebarOpen(value);
+  };
 
   const activeSectionHook = (section: string) => {
     setActiveSection(section);
@@ -17,11 +23,12 @@ function App() {
 
   return (
     <>
+      <Facade isShown={sidebarOpen} />
       <Header activeSection={activeSection} />
-      <Container activeSectionHook={activeSectionHook}>
-        <Sidebar />
-        <Home />
+      <Sidebar sidebarTriggerHook={sidebarTriggerHook} />
+      <Container activeSectionHook={activeSectionHook} display={sidebarOpen}>
         <About />
+        <Tech />
         <WorkExp />
         <Projects />
       </Container>

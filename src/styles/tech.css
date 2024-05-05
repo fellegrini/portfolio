@@ -4,5 +4,5 @@
   background-color: var(--white);
   border-radius: 50%;
   position: relative;
-  transform: translateY(100%);
+  transform: translateY(200%);
 }

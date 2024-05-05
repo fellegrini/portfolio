@@ -1,15 +1,19 @@
 import '../styles/header.css';
 
-enum sectionNames {
-  home = 'Homepage.',
-  about = 'About Me.',
-  workexp = 'Work Exp.',
-  projects = 'Projects.',
-}
+const sectionNames = {
+  about: 'About Me.',
+  tech: 'Tech/ Tools.',
+  workexp: 'Work Exp.',
+  projects: 'Proj ects.',
+};
 
 function Header({ activeSection = 'Calculating' }: { activeSection: string }) {
   const heading = sectionNames[activeSection as keyof typeof sectionNames];
   const sectionList = Object.keys(sectionNames);
+
+  function scrollTo(section: string) {
+    document.querySelector(`.${section}`)?.scrollIntoView();
+  }
 
   return (
     <header className='header'>
@@ -19,9 +23,10 @@ function Header({ activeSection = 'Calculating' }: { activeSection: string }) {
           return (
             <nav key={index} className={`navbar--nav ${activeSection === section ? 'active' : ''}`}>
               <button
+                aria-label={`Navigation - ${section}`}
                 className='navbar--button'
                 onClick={() => {
-                  document.querySelector(`.${section}`)?.scrollIntoView();
+                  scrollTo(section);
                 }}
               ></button>
             </nav>

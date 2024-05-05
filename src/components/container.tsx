@@ -6,12 +6,14 @@ import '../styles/container.css';
 function Container({
   children,
   activeSectionHook,
+  display = false,
 }: {
   children: Array<ReactElement>;
   activeSectionHook: (sectionName: string) => void;
+  display: boolean;
 }) {
   useGSAP(() => {
-    const sectionList: Array<HTMLElement> = gsap.utils.toArray('section');
+    const sectionList: Array<HTMLElement> = gsap.utils.toArray('.container section');
 
     sectionList.forEach((section) => {
       gsap.to(section, {
@@ -44,9 +46,20 @@ function Container({
         },
       });
     });
-  }, []);
+  }, [display]);
 
-  return <div className='container'>{children}</div>;
+  return (
+    display && (
+      <div
+        className='container'
+        /*       style={
+        display ? { opacity: '0', visibility: 'hidden' } : { opacity: '1', visibility: 'visible' }
+      } */
+      >
+        {children}
+      </div>
+    )
+  );
 }
 
 export default Container;

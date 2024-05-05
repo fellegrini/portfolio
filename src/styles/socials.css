@@ -1,0 +1,13 @@
+.socials {
+  gap: 48px;
+  display: flex;
+}
+
+.socials svg {
+  height: 48px;
+  width: 48px;
+}
+
+.socials--vertical {
+  flex-direction: column;
+}

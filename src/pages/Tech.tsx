@@ -1,8 +1,8 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import '../styles/home.css';
+import '../styles/tech.css';
 
-function Home() {
+function Tech() {
   useGSAP(() => {
     gsap.to('.cosito', {
       y: 500,
@@ -30,10 +30,10 @@ function Home() {
   }, []);
 
   return (
-    <section className='home'>
+    <section className='tech'>
       <div className='cosito'></div>
     </section>
   );
 }
 
-export default Home;
+export default Tech;

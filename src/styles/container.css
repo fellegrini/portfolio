@@ -13,7 +13,7 @@
   }
 }
 
-section {
+.container section {
   opacity: 0;
   visibility: hidden;
 }

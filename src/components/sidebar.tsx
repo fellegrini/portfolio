@@ -1,24 +1,23 @@
 import '../styles/sidebar.css';
-import { useRef, useState } from 'react';
 import gsap from 'gsap';
-import MainHeadline from './MainHeadline';
-import CrossIcon from '../assets/icons/cross';
-import { LinkedinIcon } from '../assets/icons/linkedin';
-import { GmailIcon } from '../assets/icons/gmail';
-import { GithubIcon } from '../assets/icons/github';
+import { useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
+import { CrossIcon } from '../assets/icons/cross';
+import MainHeadline from './MainHeadline';
+import Socials from './Socials';
 
 enum Colors {
-  red = '#c14040',
-  green = '#58ac3a',
+  Red = '#c14040',
+  Green = '#58ac3a',
 }
 
-function Sidebar() {
+function Sidebar({ sidebarTriggerHook }: { sidebarTriggerHook: (value: boolean) => void }) {
   const [isActive, setIsActive] = useState(false);
+  const [isButtonActive, setIsButtonActive] = useState(true);
   const timeline = useRef<GSAPTimeline>();
 
   const isActiveToggle = () => {
-    setIsActive(!isActive);
+    sidebarTriggerHook(!isActive), setIsButtonActive(false), setIsActive(!isActive);
   };
 
   useGSAP(() => {
@@ -33,16 +32,17 @@ function Sidebar() {
         {
           rotate: 180,
           ease: 'power2',
+          onReverseComplete: () => setIsButtonActive(true),
         },
         'sidebarAnimation',
       )
       .fromTo(
         '.icon-cross',
         {
-          fill: Colors.green,
+          fill: Colors.Green,
         },
         {
-          fill: Colors.red,
+          fill: Colors.Red,
         },
         'sidebarAnimation',
       )
@@ -67,6 +67,7 @@ function Sidebar() {
         {
           y: 0,
           autoAlpha: 1,
+          onComplete: () => setIsButtonActive(true),
         },
         'sidebarAnimation',
       );
@@ -84,16 +85,14 @@ function Sidebar() {
           aria-label={!isActive ? 'Enter the site' : 'Go back'}
           onClick={isActiveToggle}
           className='sidebar--button'
+          disabled={!isButtonActive}
         >
           <CrossIcon />
         </button>
       </div>
       <div className='sidebar--panels'>
-        <div className='sidebar--socials sidebar--socials-vertical'>
-          {/* Replace with prop (vertical, default) after Socials component creation ¨*/}
-          <LinkedinIcon />
-          <GmailIcon />
-          <GithubIcon />
+        <div className='sidebar--socials'>
+          <Socials type='vertical' />
         </div>
         <div className='sidebar--headline'>
           <MainHeadline type='small' />

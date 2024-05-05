@@ -14,10 +14,9 @@
 }
 
 .sidebar--button-container {
-  background: red;
+  background: transparent;
   height: 244px;
   width: 244px;
-  background-color: var(--black);
   border-radius: 50%;
   position: absolute;
   left: -144px;
@@ -42,7 +41,7 @@
 .sidebar--sc {
   display: inline-block;
   width: 244px;
-  height: 244px;
+  height: 248px;
   clip-path: circle(50% at 1%);
   background: var(--white);
   position: absolute;
@@ -72,6 +71,7 @@
   align-items: center;
   border-bottom: var(--border-8);
   justify-content: flex-start;
+  flex-direction: column;
   gap: 36px;
 }
 
@@ -79,13 +79,9 @@
   pointer-events: auto;
 }
 
-.sidebar--socials-vertical {
-  flex-direction: column;
-}
-
 .sidebar--socials svg {
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 
 .sidebar--headline {
