@@ -48,18 +48,7 @@ function Container({
     });
   }, [display]);
 
-  return (
-    display && (
-      <div
-        className='container'
-        /*       style={
-        display ? { opacity: '0', visibility: 'hidden' } : { opacity: '1', visibility: 'visible' }
-      } */
-      >
-        {children}
-      </div>
-    )
-  );
+  return display && <div className='container'>{children}</div>;
 }
 
 export default Container;
