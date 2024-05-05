@@ -1,11 +1,12 @@
 .facade {
-  height: 100vh;
   width: calc(100% - 215px);
-  border-right: var(--border-8);
+  border-right: var(--border-24);
   background-color: var(--black);
   z-index: 4;
   position: fixed;
   padding-left: 120px;
+  position: relative;
+  object-fit: cover;
 }
 
 .facade--container {
@@ -15,8 +16,45 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  z-index: 4;
 }
 
-.socials {
+.socials--horizontal {
   margin: 24px 0 0 4px;
 }
+
+.facade--sc {
+  display: inline-block;
+  width: 244px;
+  height: 244px;
+  clip-path: circle(50% at -1%);
+  background: var(--white);
+  position: absolute;
+  right: -40px;
+  pointer-events: none;
+  z-index: 3;
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+}
+
+.facade--sc .circle {
+  height: 192px;
+  width: 192px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: relative;
+  right: 98px;
+}
+
+/* 
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(8px);
+  opacity: 0.5;
+} */

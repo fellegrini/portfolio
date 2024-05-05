@@ -13,7 +13,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --white: #fff;
+  --white: #ececec;
   --black: #0f0f0f;
   --grey: #919191;
   --red: #c14040;

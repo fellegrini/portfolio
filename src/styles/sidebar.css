@@ -19,7 +19,7 @@
   width: 244px;
   border-radius: 50%;
   position: absolute;
-  left: -144px;
+  left: -135px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +41,8 @@
 .sidebar--sc {
   display: inline-block;
   width: 244px;
-  height: 248px;
-  clip-path: circle(50% at 1%);
+  height: 244px;
+  clip-path: circle(50% at 0%);
   background: var(--white);
   position: absolute;
   left: 120px;
