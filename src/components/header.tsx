@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import '../styles/header.css';
 
 const sectionNames = {
@@ -11,8 +13,25 @@ function Header({ activeSection = 'Calculating' }: { activeSection: string }) {
   const heading = sectionNames[activeSection as keyof typeof sectionNames];
   const sectionList = Object.keys(sectionNames);
 
+  useGSAP(() => {
+    gsap.fromTo(
+      '.header--text',
+      {
+        y: -350,
+        autoAlpha: 0,
+        ease: 'power3.inOut',
+        duration: 0.3,
+      },
+      {
+        y: 0,
+        autoAlpha: 1,
+      },
+    );
+  }, [activeSection]);
+
   function scrollTo(section: string) {
-    document.querySelector(`.${section}`)?.scrollIntoView();
+    const container = document.querySelector('.container');
+    container?.querySelector(`.${section}`)?.scrollIntoView();
   }
 
   return (

@@ -4,7 +4,7 @@
   background-color: var(--black);
   z-index: 4;
   position: fixed;
-  padding-left: 120px;
+  padding-left: 180px;
   position: relative;
   object-fit: cover;
 }
@@ -21,7 +21,7 @@
 }
 
 .socials--horizontal {
-  margin: 24px 0 0 4px;
+  margin: 8px 0 0 12px;
 }
 
 .facade--sc {
@@ -58,3 +58,33 @@
   filter: blur(8px);
   opacity: 0.5;
 } */
+
+@media screen and (max-width: 475px) {
+  .facade {
+    width: 100%;
+    height: calc(100% - 180px);
+    padding: 56px 24px;
+    border-right: none;
+    border-bottom: var(--border-4);
+    padding-bottom: 0;
+    overflow-y: hidden;
+  }
+
+  .facade--container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facade--sc {
+    bottom: -56px;
+    transform: rotate(270deg);
+    right: auto;
+    width: 72px;
+    height: 176px;
+  }
+
+  .circle {
+    height: 124px;
+    width: 124px;
+  }
+}

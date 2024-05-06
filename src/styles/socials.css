@@ -11,3 +11,18 @@
 .socials--vertical {
   flex-direction: column;
 }
+
+@media screen and (max-width: 475px) {
+  .socials {
+    gap: 32px;
+  }
+
+  .socials svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  .socials--vertical {
+    flex-direction: row;
+  }
+}

@@ -3,27 +3,27 @@
 }
 
 .main-headline--headline {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .main-headline--subheadline {
-  font-family: 'Optik Sans', 'Bebas Neue', sans-serif;
+  font-family: 'Optik Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .main-headline--big .main-headline--headline {
-  font-size: 240px;
+  font-size: 232px;
   max-width: 75%;
-  line-height: 186px;
+  line-height: 216px;
 }
 
 .main-headline--big .main-headline--subheadline {
-  font-size: 62px;
-  line-height: 40px;
-  margin: 8px 0 0 8px;
+  font-size: 72px;
+  line-height: 64px;
+  margin: -8px 0 0 16px;
   text-wrap: nowrap;
 }
 
@@ -33,12 +33,48 @@
 }
 
 .main-headline--small .main-headline--headline {
-  font-size: 64px;
-  line-height: 0.8;
+  font-size: 56px;
+  line-height: 56px;
 }
 
 .main-headline--small .main-headline--subheadline {
   font-size: 18px;
   line-height: 0.8;
-  margin-left: 2px;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 475px) {
+  .main-headline--big {
+    text-align: center;
+  }
+
+  .main-headline--big .main-headline--headline {
+    font-size: 88px;
+    line-height: 80px;
+    max-width: none;
+  }
+
+  .main-headline--big .main-headline--subheadline {
+    font-size: 28px;
+    line-height: 36px;
+    margin: -4px 0 0;
+  }
+
+  .main-headline--small {
+    margin: 0;
+    width: min-content;
+    transform: none;
+  }
+
+  .main-headline--small .main-headline--headline {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .main-headline--small .main-headline--subheadline {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 2px;
+    text-wrap: nowrap;
+  }
 }
