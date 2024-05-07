@@ -39,3 +39,27 @@
 .navbar--nav.active .navbar--button {
   background-color: var(--white);
 }
+
+@media screen and (max-width: 475px) {
+  .header {
+    padding: 0 24px 16px 24px;
+    margin-top: 28px;
+  }
+
+  .header--text {
+    font-size: 12vw;
+    line-height: 7vw;
+    max-width: 250px;
+  }
+
+  .navbar {
+    width: auto;
+    gap: 16px;
+  }
+
+  .navbar--button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+}

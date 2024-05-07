@@ -15,9 +15,9 @@
 }
 
 .main-headline--big .main-headline--headline {
-  font-size: 232px;
+  font-size: 14vw;
   max-width: 75%;
-  line-height: 216px;
+  line-height: 13vw;
 }
 
 .main-headline--big .main-headline--subheadline {
@@ -49,15 +49,15 @@
   }
 
   .main-headline--big .main-headline--headline {
-    font-size: 88px;
-    line-height: 80px;
+    font-size: 72px;
+    line-height: 68px;
     max-width: none;
   }
 
   .main-headline--big .main-headline--subheadline {
-    font-size: 28px;
-    line-height: 36px;
-    margin: -4px 0 0;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
   }
 
   .main-headline--small {
