@@ -1,7 +1,5 @@
-import React from 'react';
-
-function Home() {
+function Projects() {
   return <section id='projects' className='projects'></section>;
 }
 
-export default Home;
+export default Projects;

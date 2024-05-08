@@ -1,10 +1,11 @@
 .facade {
-  width: calc(100% - 215px);
+  width: var(--sidebar-offset--desktop);
   border-right: var(--border-24);
   background-color: var(--black);
   z-index: 4;
-  padding-left: 180px;
+  padding: 2em 2em 2em 180px;
   position: absolute;
+  height: 100vh;
 }
 
 .facade--container {
@@ -19,7 +20,7 @@
 }
 
 .socials--horizontal {
-  margin: 8px 0 0 12px;
+  margin: 8px 0 0;
 }
 
 .facade--sc {
@@ -60,7 +61,7 @@
 @media screen and (max-width: 475px) {
   .facade {
     width: 100%;
-    height: calc(100% - 140px);
+    height: var(--sidebar-offset--mobile);
     padding: 56px 24px;
     border-right: none;
     border-bottom: var(--border-4);

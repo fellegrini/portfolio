@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import '../styles/tech.css';
+import './index.css';
 
 function Tech() {
   useGSAP(() => {

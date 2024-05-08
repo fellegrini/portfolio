@@ -23,6 +23,8 @@
   --border-8: 8px solid var(--white);
   --border-16: 16px solid var(--white);
   --border-24: 24px solid var(--white);
+  --sidebar-offset--desktop: calc(100% - 215px);
+  --sidebar-offset--mobile: calc(100% - 140px);
 }
 
 * {
@@ -134,9 +136,9 @@ button {
   cursor: pointer;
 }
 
-section {
+section:not(.facade) {
   height: 100vh; /* Each section occupies the full height of the viewport */
   width: 100%;
   scroll-snap-align: start; /* Ensures smooth scrolling alignment */
-  padding: 2em;
+  padding: 2em 64px 2em;
 }

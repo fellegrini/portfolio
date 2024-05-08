@@ -7,59 +7,60 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 64px;
+  padding: 0 24px 16px 24px;
   color: var(--white);
   pointer-events: none;
-  margin-top: 64px;
+  margin-top: 28px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .header--text {
   font-family: 'Optik Sans', 'Bebas Neue', sans-serif;
-  font-size: 128px;
-  line-height: 80px;
+  font-size: 12vw;
+  line-height: 7vw;
   margin: 0;
-  max-width: 500px;
+  max-width: 250px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  gap: 24px;
-  width: 50%;
+  gap: 16px;
+  width: auto;
   pointer-events: auto;
 }
 
 .navbar--button {
   background-color: var(--grey);
-  width: 48px;
-  height: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 
 .navbar--nav.active .navbar--button {
   background-color: var(--white);
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (min-width: 476px) {
   .header {
-    padding: 0 24px 16px 24px;
-    margin-top: 28px;
+    padding: 0 64px;
+    margin-top: 56px;
   }
 
   .header--text {
-    font-size: 12vw;
-    line-height: 7vw;
-    max-width: 250px;
+    font-size: 128px;
+    line-height: 80px;
+    max-width: 500px;
   }
 
   .navbar {
-    width: auto;
-    gap: 16px;
+    width: 50%;
+    gap: 24px;
   }
 
   .navbar--button {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
+    width: 48px;
+    height: 16px;
+    border-radius: initial;
   }
 }

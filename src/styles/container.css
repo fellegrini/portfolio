@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  width: var(--sidebar-offset--desktop);
 }
 
 .container::-webkit-scrollbar {
@@ -17,16 +18,15 @@
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
   }
-  /* 
-  @media screen and (max-width: 475px) {
-    .container {
-      scroll-snap-type: none;
-      scroll-snap-stop: none;
-    }
-  } */
 }
 
 .container section {
   opacity: 0;
   visibility: hidden;
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
 }

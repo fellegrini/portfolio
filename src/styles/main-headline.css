@@ -18,12 +18,13 @@
   font-size: 14vw;
   max-width: 75%;
   line-height: 13vw;
+  margin-left: -16px;
 }
 
 .main-headline--big .main-headline--subheadline {
   font-size: 72px;
   line-height: 64px;
-  margin: -8px 0 0 16px;
+  margin: -8px 0 0;
   text-wrap: nowrap;
 }
 
