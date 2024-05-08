@@ -64,3 +64,20 @@
     border-radius: initial;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 48px;
+    margin-top: 48px;
+  }
+
+  .header--text {
+    font-size: 8vw;
+    line-height: 5.5vw;
+    max-width: 200px;
+  }
+
+  .navbar {
+    width: 540px;
+  }
+}

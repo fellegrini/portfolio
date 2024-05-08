@@ -17,14 +17,14 @@ function Header({ activeSection = 'Calculating' }: { activeSection: string }) {
     gsap.fromTo(
       '.header--text',
       {
-        y: -350,
+        y: -375,
         autoAlpha: 0,
         ease: 'power3.inOut',
-        duration: 0.3,
       },
       {
         y: 0,
         autoAlpha: 1,
+        duration: 0.3,
       },
     );
   }, [activeSection]);

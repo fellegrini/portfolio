@@ -93,3 +93,23 @@
     margin: 40px 0 0;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-height: 768px) {
+  .facade {
+    padding-left: 88px;
+    border-right: 12px solid var(--white);
+    width: calc(100% - 168px);
+  }
+
+  .facade--sc {
+    height: 160px;
+    width: 160px;
+    right: -36px;
+  }
+
+  .facade--sc .circle {
+    right: 72px;
+    height: 138px;
+    width: 138px;
+  }
+}

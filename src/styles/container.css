@@ -30,3 +30,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(100% - 180px);
+  }
+}

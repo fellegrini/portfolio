@@ -1,6 +1,6 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 1.5fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
+  grid-template-columns: repeat(5, 1fr) 0.5fr 1.5fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
   grid-template-rows: 0.75fr 1.3fr 1.5fr 0.8fr 0.5fr 1.4fr;
   gap: 0px 0px;
 }
@@ -83,5 +83,20 @@
   }
 
   .about--footer {
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section.about {
+    padding: 1em 48px 1em;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 0.85fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
+    grid-template-rows: 0.8fr 1.3fr 1.5fr 0.8fr 0.5fr 1.4fr;
+  }
+
+  .icons-year {
+    margin-bottom: -16px;
   }
 }

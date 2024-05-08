@@ -1,5 +1,5 @@
 .socials {
-  gap: 5vh;
+  gap: 7vh;
   display: flex;
 }
 
@@ -24,5 +24,16 @@
 
   .socials--vertical {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 768px) {
+  .socials {
+    gap: 48px;
+  }
+
+  .socials--horizontal svg {
+    height: 40px;
+    width: 40px;
   }
 }
