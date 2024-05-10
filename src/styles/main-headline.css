@@ -15,15 +15,15 @@
 }
 
 .main-headline--big .main-headline--headline {
-  font-size: 14vw;
+  font-size: 12vw;
   max-width: 75%;
-  line-height: 13vw;
+  line-height: 11vw;
   margin-left: -18px;
 }
 
 .main-headline--big .main-headline--subheadline {
-  font-size: 4.5vw;
-  line-height: 64px;
+  font-size: 4vw;
+  line-height: 72px;
   margin: -8px 0 25px 0;
   text-wrap: nowrap;
 }
