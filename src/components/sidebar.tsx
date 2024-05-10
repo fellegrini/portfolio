@@ -40,9 +40,12 @@ function Sidebar({ sidebarTriggerHook }: { sidebarTriggerHook: (value: boolean) 
         '.icon-cross',
         {
           fill: Colors.Green,
+          filter: 'drop-shadow(2px 1px 3px #58ac3a)',
         },
         {
           fill: Colors.Red,
+          y: 2,
+          filter: 'drop-shadow(-2px -1px 3px #c14040)',
         },
         'sidebarAnimation',
       )

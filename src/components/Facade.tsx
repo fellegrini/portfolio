@@ -9,7 +9,7 @@ function Facade({ isShown = true }) {
     const matchMedia = gsap.matchMedia();
     matchMedia.add(
       {
-        isMobile: '(max-width: 475px)',
+        isMobile: '(max-width: 768px)',
         isTablet: '(max-width: 840x)',
         isDesktop: '(min-width: 841px)',
       },

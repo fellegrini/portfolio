@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 768px) {
   .socials {
     gap: 56px;
   }

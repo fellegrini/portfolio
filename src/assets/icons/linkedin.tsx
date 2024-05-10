@@ -1,15 +1,25 @@
 export const LinkedinIcon = () => {
   return (
-    <svg viewBox='0 0 128 128' aria-labelledby='linkedin-icon'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      aria-labelledby='linkedin-icon'
+      width={48}
+      height={48}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
       <title id='linkedin-icon'>LinkedIn</title>
-      <path
-        fill='#fff'
-        d='M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z'
-      ></path>
-      <path
-        fill='#000'
-        d='M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z'
-      ></path>
+
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z' />
+      <path d='M8 11l0 5' />
+      <path d='M8 8l0 .01' />
+      <path d='M12 16l0 -5' />
+      <path d='M16 16v-3a2 2 0 0 0 -4 0' />
     </svg>
   );
 };

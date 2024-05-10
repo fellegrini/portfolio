@@ -82,18 +82,15 @@
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
-    padding: 0 24px 16px 24px;
-    margin-top: 32px;
-  }
-
-  .navbar {
-    width: 50%;
+    padding: 0 32px 16px 40px;
+    margin-top: 40px;
   }
 
   .header--text {
     font-size: 12vw;
     line-height: 8vw;
+    width: 75%;
   }
 }

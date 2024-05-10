@@ -58,7 +58,7 @@
   opacity: 0.5;
 } */
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 768px) {
   .facade {
     width: 100%;
     height: var(--sidebar-offset--mobile);
