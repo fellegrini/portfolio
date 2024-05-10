@@ -154,3 +154,9 @@ section:not(.facade) {
     padding: 1em 24px 1em 24px;
   }
 }
+
+@media screen and (min-width: 853px) and (min-height: 1280px) {
+  section:not(.facade) {
+    padding-left: 40px;
+  }
+}
