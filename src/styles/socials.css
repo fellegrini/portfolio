@@ -1,39 +1,13 @@
 .socials {
-  gap: 7vh;
+  gap: 48px;
   display: flex;
 }
 
 .socials svg {
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
 }
 
 .socials--vertical {
-  flex-direction: column;
-}
-
-@media screen and (max-width: 820px) {
-  .socials {
-    gap: 56px;
-  }
-
-  .socials svg {
-    height: 32px;
-    width: 32px;
-  }
-
-  .socials--vertical {
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-height: 820px) {
-  .socials {
-    gap: 48px;
-  }
-
-  .socials--horizontal svg {
-    height: 40px;
-    width: 40px;
-  }
+  flex-direction: row;
 }

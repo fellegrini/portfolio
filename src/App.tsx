@@ -25,13 +25,13 @@ function App() {
     <>
       <Facade isShown={sidebarOpen} />
       <Header activeSection={activeSection} />
-      <Sidebar sidebarTriggerHook={sidebarTriggerHook} />
       <Container activeSectionHook={activeSectionHook} display={sidebarOpen}>
         <About />
         <Tech />
         <WorkExp />
         <Projects />
       </Container>
+      <Sidebar sidebarTriggerHook={sidebarTriggerHook} />
     </>
   );
 }

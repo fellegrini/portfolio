@@ -38,6 +38,10 @@ body,
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 html,
@@ -137,7 +141,7 @@ button {
 }
 
 section:not(.facade) {
-  height: 100vh; /* Each section occupies the full height of the viewport */
+  height: 100%;
   width: 100%;
   scroll-snap-align: start; /* Ensures smooth scrolling alignment */
   padding: 2em 64px 2em;
@@ -151,12 +155,18 @@ section:not(.facade) {
 
 @media screen and (max-width: 475px) {
   section:not(.facade) {
-    padding: 1em 24px 1em 24px;
+    padding: 1em 24px 0 24px;
   }
 }
 
 @media screen and (min-width: 853px) and (min-height: 1280px) {
   section:not(.facade) {
     padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #root {
+    flex-direction: row;
   }
 }

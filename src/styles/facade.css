@@ -5,14 +5,20 @@
   z-index: 4;
   padding: 2em 2em 2em 180px;
   position: absolute;
-  height: 100vh;
+  height: calc(100% - 144px);
+  top: 0;
+  width: 100%;
+  padding: 0 28px;
+  margin-top: 4px;
+  border-right: none;
+  border-bottom: var(--border-4);
 }
 
 .facade--container {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -20,81 +26,38 @@
 }
 
 .socials--horizontal {
-  margin: 8px 0 0;
+  margin: 24px 0 0;
 }
 
 .facade--sc {
-  display: inline-block;
-  width: 244px;
-  height: 244px;
-  clip-path: circle(50% at -1%);
   background: var(--white);
   position: absolute;
-  right: -40px;
   pointer-events: none;
   z-index: 3;
-  transform: rotate(180deg);
   display: flex;
   align-items: center;
+  bottom: -56px;
+  transform: rotate(270deg);
+  right: auto;
+  width: 72px;
+  height: 182px;
+  clip-path: circle(36% at 0%);
 }
+/* transform: rotate(180deg);  */
+/*   width: 244px;
+     height: 244px; */
 
 .facade--sc .circle {
-  height: 192px;
-  width: 192px;
   background-color: var(--black);
   border-radius: 50%;
   position: relative;
-  right: 98px;
+  height: 92px;
+  width: 92px;
+  flex-shrink: 0;
+  right: 46px;
 }
 
-/* 
-.bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  filter: blur(8px);
-  opacity: 0.5;
-} */
-
-@media screen and (max-width: 820px) {
-  .facade {
-    width: 100%;
-    height: var(--sidebar-offset--mobile);
-    padding: 56px 24px;
-    border-right: none;
-    border-bottom: var(--border-4);
-    padding-bottom: 0;
-  }
-
-  .facade--container {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .facade--sc {
-    bottom: -56px;
-    transform: rotate(270deg);
-    right: auto;
-    width: 72px;
-    height: 182px;
-    clip-path: circle(36% at 0%);
-  }
-
-  .facade--sc .circle {
-    height: 92px;
-    width: 92px;
-    flex-shrink: 0;
-    right: 46px;
-  }
-
-  .socials--horizontal {
-    margin: 40px 0 0;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-height: 820px) {
+/* @media screen and (min-width: 1024px) and (max-height: 820px) {
   .facade {
     padding-left: 88px;
     border-right: 12px solid var(--white);
@@ -119,3 +82,4 @@
     padding-left: 96px;
   }
 }
+ */

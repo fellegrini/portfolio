@@ -1,5 +1,54 @@
 .about {
   display: grid;
+  grid-template-columns: 0.5fr repeat(2, 1.5fr) 0.5fr;
+  grid-template-rows: 1.33fr repeat(3, 1fr) 0.33fr 1.5fr 1fr 0.5fr 0.75fr;
+  gap: 0 0;
+}
+
+.about--text {
+  font-size: 4vw;
+  line-height: 5.8vw;
+  grid-area: 2 / 1 / 5 / 5;
+  display: flex;
+  align-items: center;
+}
+
+.about--image {
+  object-fit: cover;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: grayscale();
+  image-rendering: optimizeSpeed;
+  border-radius: 36px 36px 0 0;
+  grid-area: 6 / 2 / 10 / 4;
+}
+
+.about--footer {
+  grid-area: 10 / 1 / 8 / 5;
+}
+
+.about--marquee {
+  min-width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+
+.icons-year {
+  width: 25%;
+  margin-bottom: -8px;
+}
+
+.icons-geo {
+  width: 100%;
+  animation: marquee 10s linear infinite;
+  animation-delay: 0s;
+}
+
+/* .about {
+  display: grid;
   grid-template-columns: repeat(5, 1fr) 0.5fr 1.5fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
   grid-template-rows: 0.95fr 1.3fr 1.5fr 0.8fr 0.5fr 1.4fr;
   gap: 0px 0px;
@@ -33,7 +82,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: flex-end;
-  z-index: 4;
+  z-index: 3;
 }
 
 .icons-year {
@@ -43,9 +92,9 @@
 
 .icons-geo {
   width: 100%;
-}
+} */
 
-@media screen and (min-height: 899px) and (min-width: 1441px) {
+/* @media screen and (min-height: 899px) and (min-width: 1441px) {
   .about {
     grid-template-columns: 1fr 1fr 1fr 1fr 1.3fr 2fr 1.7fr 1.5fr 1fr 1.5fr 1fr 1fr;
     grid-template-rows: 1.1fr 1.2fr 1fr 1fr 1fr 2fr;
@@ -63,7 +112,7 @@
   }
 
   .icons-year {
-    width: 20%;
+    width: 25%;
   }
 }
 
@@ -84,7 +133,7 @@
   }
 
   .icons-year {
-    margin-bottom: -16px;
+    margin-bottom: -32px;
   }
 }
 
@@ -115,15 +164,9 @@
     gap: 1em;
   }
 
-  .icons-year,
-  .icons-geo {
-    opacity: 0.85;
-  }
-
   .icons-year {
     width: 25%;
     margin-bottom: -8px;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
   }
 
   .icons-geo {
@@ -148,12 +191,6 @@
   .about--image {
     padding: 0;
   }
-
-  .icons-year,
-  .icons-geo {
-    filter: none;
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -173,8 +210,8 @@
 
 @media screen and (min-width: 1180px) and (min-height: 820px) {
   section.about {
-    grid-template-columns: repeat(5, 1fr) 0.5fr 1.5fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
-    grid-template-rows: 0.95fr 1.3fr 1.5fr 0.8fr 0.5fr 1.4fr;
+    grid-template-columns: repeat(5, 1fr) 1fr 1.5fr 1.5fr 1fr 1.5fr 0.5fr 1fr;
+    grid-template-rows: 0.95fr 1fr 1.5fr 0.5fr 1fr 1.4fr;
   }
 }
 
@@ -201,6 +238,7 @@
     animation: marquee 10s linear infinite;
   }
 }
+*/
 
 @keyframes marquee {
   from {
