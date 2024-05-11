@@ -26,7 +26,7 @@
 }
 
 .socials--horizontal {
-  margin: 24px 0 0;
+  margin: 16px 0 0;
 }
 
 .facade--sc {
@@ -43,9 +43,6 @@
   height: 182px;
   clip-path: circle(36% at 0%);
 }
-/* transform: rotate(180deg);  */
-/*   width: 244px;
-     height: 244px; */
 
 .facade--sc .circle {
   background-color: var(--black);
@@ -57,29 +54,49 @@
   right: 46px;
 }
 
-/* @media screen and (min-width: 1024px) and (max-height: 820px) {
+@media screen and (min-width: 768px) {
   .facade {
+    height: calc(100% - 160px);
+  }
+
+  .socials--horizontal {
+    margin: 24px 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .facade {
+    height: 100%;
+    left: 0;
     padding-left: 88px;
     border-right: 12px solid var(--white);
-    width: calc(100% - 168px);
+    border-bottom: 0;
+    width: calc(100% - 156px);
+    margin: 0;
+  }
+
+  .facade--container {
+    align-items: flex-start;
   }
 
   .facade--sc {
     height: 160px;
     width: 160px;
     right: -36px;
+    transform: rotate(180deg);
+    bottom: auto;
+    display: inline-flex;
+    clip-path: circle(50% at 1%);
+    align-items: center;
   }
 
   .facade--sc .circle {
-    right: 72px;
     height: 138px;
     width: 138px;
+    right: 68px;
   }
-}
 
-@media screen and (min-width: 1024px) and (min-height: 1366px) {
-  .facade {
-    padding-left: 96px;
+  .socials--horizontal {
+    margin: 16px 0 0 -4px;
   }
 }
- */

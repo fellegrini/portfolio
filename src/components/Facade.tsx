@@ -9,9 +9,8 @@ function Facade({ isShown = true }) {
     const matchMedia = gsap.matchMedia();
     matchMedia.add(
       {
-        isMobile: '(max-width: 820px)',
-        isTablet: '(max-width: 840x)',
-        isDesktop: '(min-width: 841px)',
+        isMobile: '(max-width: 1023px)',
+        isDesktop: '(min-width: 1024px)',
       },
       (context) => {
         const { conditions } = context;
@@ -19,9 +18,10 @@ function Facade({ isShown = true }) {
           const { isMobile, isDesktop } = conditions;
           gsap.to('.facade', {
             x: !isShown ? 0 : isDesktop ? -2500 : 0,
-            y: !isShown ? 0 : isMobile ? -1200 : 0,
+            y: !isShown ? 0 : isMobile ? -2500 : 0,
             ease: 'power1.inOut',
             duration: 0.6,
+            display: isShown ? 'none' : 'block',
           });
         }
       },

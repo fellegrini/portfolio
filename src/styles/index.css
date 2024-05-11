@@ -144,29 +144,18 @@ section:not(.facade) {
   height: 100%;
   width: 100%;
   scroll-snap-align: start; /* Ensures smooth scrolling alignment */
-  padding: 2em 64px 2em;
+  padding: 1em 24px 0 24px;
 }
 
-@media screen and (min-width: 1024px) and (max-height: 820px) {
+@media screen and (min-width: 768px) {
   section:not(.facade) {
-    padding: 1em 0 1em 48px;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  section:not(.facade) {
-    padding: 1em 24px 0 24px;
-  }
-}
-
-@media screen and (min-width: 853px) and (min-height: 1280px) {
-  section:not(.facade) {
-    padding-left: 40px;
+    padding: 1em 48px 0 48px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #root {
     flex-direction: row;
+    justify-content: space-between;
   }
 }

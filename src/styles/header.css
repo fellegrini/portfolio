@@ -7,10 +7,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 24px 16px 24px;
+  padding: 0 16px 0 24px;
   color: var(--white);
   pointer-events: none;
-  margin-top: 28px;
+  margin-top: 24px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -19,7 +19,7 @@
   font-size: 12vw;
   line-height: 7.5vw;
   margin: 0;
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .navbar {
@@ -67,7 +67,11 @@
 
 @media screen and (min-width: 1024px) {
   .header--text {
-    font-size: 7vw;
-    line-height: 4.5vw;
+    font-size: 7.5vw;
+    line-height: 5vw;
+  }
+
+  .navbar {
+    margin: 0 auto;
   }
 }

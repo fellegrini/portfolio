@@ -27,8 +27,9 @@ function About() {
         <p>
           I am a front-end developer with a passion for crafting immersive digital experiences. With
           a meticulous approach to code and design, I specialize in creating engaging and
-          user-friendly websites that leave a lasting impression. From sleek and modern UI to
-          interactive features, I leverage tech to bring ideas to life.
+          user-friendly websites that leave a lasting impression.
+          <br />
+          From sleek and modern UI to interactive features, I leverage tech to bring ideas to life.
         </p>
       </div>
       <img
