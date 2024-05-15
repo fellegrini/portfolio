@@ -100,3 +100,9 @@
     margin: 16px 0 0 -4px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .facade {
+    padding-left: 15vw;
+  }
+}

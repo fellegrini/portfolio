@@ -26,3 +26,9 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .socials {
+    gap: 72px;
+  }
+}

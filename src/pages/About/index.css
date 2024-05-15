@@ -106,6 +106,48 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .about {
+    grid-template-columns: 0.66fr repeat(4, 1fr) 0.5fr 0.8fr 1.5fr 1fr 1.5fr 0.5fr 0.66fr;
+    grid-template-rows: 0.5fr 1fr 0.33fr 1.5fr 1.5fr 0.66fr 1.1fr 1.33fr;
+  }
+
+  .about--text {
+    font-size: 1.45rem;
+    line-height: 2rem;
+    grid-area: 4 / 1 / 6 / 7;
+  }
+
+  .about--image {
+    grid-area: 3 / 8 / 8 / 11;
+  }
+
+  .about--footer {
+    grid-area: 6 / 1 / 9 / 13;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    grid-template-columns: 0.33fr repeat(5, 0.5fr) 0.66fr repeat(3, 0.66fr) 0.5fr 0.33fr;
+    grid-template-rows: 0.5fr 1fr 0.66fr 1.5fr 1.5fr 0.66fr 1.1fr 1.33fr;
+  }
+
+  .about--text {
+    font-size: 1.16vw;
+    line-height: 1.65vw;
+    grid-area: 4 / 2 / 6 / 7;
+  }
+
+  .about--image {
+    grid-area: 3 / 8 / 8 / 11;
+  }
+
+  .about--footer {
+    grid-area: 6 / 2 / 9 / 12;
+  }
+}
+
 @keyframes marquee {
   from {
     transform: scale(1.4) translateX(100%) translateZ(0);

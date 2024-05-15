@@ -44,7 +44,6 @@ function Sidebar({ sidebarTriggerHook }: { sidebarTriggerHook: (value: boolean) 
         },
         {
           fill: Colors.Red,
-          y: 2,
           filter: 'drop-shadow(-2px -1px 3px #c14040)',
         },
         'sidebarAnimation',
