@@ -1,37 +1,46 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import TechPanel from '../../components/TechPanel';
 import './index.css';
 
+const techPanels = [
+  {
+    category: 'Code.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita incidunt nulla magnam possimus quam, nobis minus quasi. Esse aspernatur illo mollitia ea eius expedita assumenda consectetur autem aperiam velit.',
+    techList: ['html', 'css', 'js', 'ts'],
+  },
+  {
+    category: 'Frameworks.',
+    sub: 'Libraries,',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita incidunt nulla magnam possimus quam, nobis minus quasi. Esse aspernatur illo mollitia ea eius expedita assumenda consectetur autem aperiam velit.',
+
+    techList: ['react', 'lit', 'angular', 'flask', 'sass', 'material', 'gsap', 'mobx', 'rxjs'],
+  },
+  {
+    category: 'Operations.',
+    description:
+      'I use Figma and AdobeXD for my design projects. I use VSCode for my coding projects. I use Figma and AdobeXD for my design projects.',
+    techList: ['git', 'bitbucket', 'webpack', 'vite', 'gcloud', 'jira'],
+  },
+];
+
 function Tech() {
+  const panelList: Array<HTMLElement> = gsap.utils.toArray('.tech-panel');
+  /* const timeline = gsap.timeline({ defaults: { duration: 1, paused: true } }); */
+
   useGSAP(() => {
-    gsap.to('.cosito', {
-      y: 500,
-      ease: 'power3.inOut',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: '.cosito',
-        // markers: true,
-        scrub: 2,
-        start: 'top top',
-        end: 'bottom 65%',
-        scroller: '.container',
-        toggleActions: 'play reverse play reverse',
-        //              onEnter onLeave onEnterBack onLeaveBack
-        onToggle: (self) => {
-          if (self.isActive) {
-            console.log(`heading has become active`);
-            // Aimation or logic for when the section comes into view
-          } else {
-            // Animation or logic for when the section goes out of view
-          }
-        },
-      },
-    });
-  }, []);
+    panelList.forEach(() => {});
+  }, [panelList]);
 
   return (
     <section className='tech'>
-      <div className='cosito'></div>
+      <div className='tech--container'>
+        {techPanels.map((techPanel) => (
+          <TechPanel panelData={techPanel} key={techPanel.category} />
+        ))}
+      </div>
     </section>
   );
 }

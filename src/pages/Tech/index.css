@@ -1,8 +1,21 @@
-.cosito {
-  height: 120px;
-  width: 120px;
-  background-color: var(--white);
-  border-radius: 50%;
-  position: relative;
-  transform: translateY(200%);
+.tech {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tech--container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: auto;
+  padding: 140px 0;
+  gap: 72px;
 }

@@ -11,7 +11,6 @@ export const GithubIcon = () => {
       strokeWidth={2}
       strokeLinecap='round'
       strokeLinejoin='round'
-      className='icon icon-tabler icons-tabler-outline icon-tabler-brand-github'
     >
       <title id='github-icon'>GitHub</title>
       <path stroke='none' d='M0 0h24v24H0z' fill='none' />

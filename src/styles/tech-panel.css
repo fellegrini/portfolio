@@ -1,0 +1,47 @@
+.tech-panel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tech-panel--active {
+}
+
+.tech-panel--headline,
+.tech-panel--headline-sub {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.tech-panel--headline {
+  font-size: 14vw;
+}
+
+.tech-panel--headline-sub {
+  font-size: 32px;
+  margin-bottom: -24px;
+  padding-top: 16px;
+}
+
+.tech-panel--description {
+  margin-top: 4px;
+}
+
+.tech-panel--list-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  column-gap: 36px;
+  row-gap: 24px;
+  margin-top: 32px;
+}
+
+.tech-panel--list-item {
+  height: 48px;
+  width: 48px;
+  border: 1px solid (var(--red));
+}

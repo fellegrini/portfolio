@@ -3,6 +3,7 @@
   grid-template-columns: 0.5fr repeat(2, 1.5fr) 0.5fr;
   grid-template-rows: 1.33fr repeat(3, 1fr) 0.33fr 1.5fr 1fr 0.5fr 0.75fr;
   gap: 0 0;
+  overflow: hidden;
 }
 
 .about--text {
