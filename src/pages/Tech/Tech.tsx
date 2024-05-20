@@ -1,5 +1,3 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import TechPanel from '../../components/TechPanel';
 import './index.css';
 
@@ -7,33 +5,26 @@ const techPanels = [
   {
     category: 'Code.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita incidunt nulla magnam possimus quam, nobis minus quasi. Esse aspernatur illo mollitia ea eius expedita assumenda consectetur autem aperiam velit.',
+      'Crafting clean, maintainable, and efficient code is my go-to strategy. I strive for simplicity, ensuring that every line serves a purpose. By adhering to best practices and coding standards, I deliver robust solutions that are both scalable and easy to understand.',
     techList: ['html', 'css', 'js', 'ts'],
   },
   {
     category: 'Frameworks.',
     sub: 'Libraries,',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati expedita incidunt nulla magnam possimus quam, nobis minus quasi. Esse aspernatur illo mollitia ea eius expedita assumenda consectetur autem aperiam velit.',
+      'These powerful resources enable rapid development and ensure my projects are equipped with the latest functionalities and optimizations, providing a seamless user experience.',
 
     techList: ['react', 'lit', 'angular', 'flask', 'sass', 'material', 'gsap', 'mobx', 'rxjs'],
   },
   {
     category: 'Operations.',
     description:
-      'I use Figma and AdobeXD for my design projects. I use VSCode for my coding projects. I use Figma and AdobeXD for my design projects.',
-    techList: ['git', 'bitbucket', 'webpack', 'vite', 'gcloud', 'jira'],
+      'From version control to build automation, these tools help manage complexity, ensure code quality, and facilitate continuous integration and deployment, making development more efficient and reliable.',
+    techList: ['git', 'bitbucket', 'webpack', 'vite', 'gcloud', 'jira', 'vscode'],
   },
 ];
 
 function Tech() {
-  const panelList: Array<HTMLElement> = gsap.utils.toArray('.tech-panel');
-  /* const timeline = gsap.timeline({ defaults: { duration: 1, paused: true } }); */
-
-  useGSAP(() => {
-    panelList.forEach(() => {});
-  }, [panelList]);
-
   return (
     <section className='tech'>
       <div className='tech--container'>

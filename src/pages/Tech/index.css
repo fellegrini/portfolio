@@ -15,7 +15,32 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  overflow: auto;
+  overflow: hidden auto;
   padding: 140px 0;
   gap: 72px;
+}
+
+@media screen and (min-width: 640px) {
+  .tech--container {
+    padding: 240px 48px;
+    gap: 96px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tech {
+    justify-content: flex-end;
+  }
+
+  .tech--container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 156px 32px 64px 0;
+    gap: 48px;
+    overflow: hidden;
+  }
+
+  .tech-panel {
+    width: 30%;
+  }
 }

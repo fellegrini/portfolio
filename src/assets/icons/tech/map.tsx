@@ -26,6 +26,7 @@ import { GcloudIcon } from './GcloudIcon';
 import { JiraIcon } from './JiraIcon';
 import { GsapIcon } from './GsapIcon';
 import { ReactElement } from 'react';
+import { VsCodeIcon } from './VsCodeIcon';
 
 type IconMap = {
   [key: string]: ReactElement;
@@ -92,6 +93,10 @@ export const iconMap: IconMap = {
    * Vite icon
    */
   vite: ViteIcon(),
+  /**
+   * VsCode icon
+   */
+  vscode: VsCodeIcon(),
   /**
    * MobX icon
    */

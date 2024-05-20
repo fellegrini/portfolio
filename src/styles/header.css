@@ -7,11 +7,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 16px 0 24px;
+  padding: 24px 16px 8px 24px;
   color: var(--white);
   pointer-events: none;
-  margin-top: 24px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  backdrop-filter: blur(3px);
 }
 
 .header--text {
@@ -43,8 +43,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 0 48px;
-    margin-top: 48px;
+    padding: 48px 48px 8px 48px;
   }
 
   .header--text {
@@ -73,5 +72,12 @@
 
   .navbar {
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header--text {
+    font-size: 6vw;
+    line-height: 4vw;
   }
 }
