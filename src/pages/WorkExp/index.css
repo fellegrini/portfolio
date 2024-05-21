@@ -1,0 +1,17 @@
+.workexp {
+  display: flex;
+  align-items: flex-end;
+}
+
+.workexp--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden auto;
+  height: 100%;
+  row-gap: 120px;
+}

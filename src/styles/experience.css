@@ -1,0 +1,71 @@
+.experience {
+}
+
+.experience div,
+.experience ul {
+}
+
+.experience--headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience--year,
+.experience--company {
+  font-family: 'Optik Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.experience--year {
+  font-size: 7vw;
+  transform: rotate3d(5, 1, -1, 20deg);
+  border-top: 2px solid var(--white);
+  line-height: 32px;
+  padding: 8px 0 24px 0;
+}
+
+.experience--company {
+  margin-top: 16px;
+  font-size: 8vw;
+  line-height: 32px;
+  padding: 8px;
+  /* box-shadow: inset 1px 1px 11px black; */
+}
+
+.experience--position {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12vw;
+  line-height: 11vw;
+  margin-top: 24px;
+}
+
+.experience--tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.experience--tech-item {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  padding: 2px 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #243d57;
+}
+
+.experience--summary {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.experience--summary-paragraph {
+}

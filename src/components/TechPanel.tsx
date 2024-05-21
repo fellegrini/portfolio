@@ -15,8 +15,25 @@ function TechPanel({ panelData }: { panelData: PanelDataType }) {
   const [isPanelActive, setIspanelActive] = useState(false);
   useGSAP(() => {
     gsap.to('.tech-panel', {
+      y: 0,
+      delay: 0.1,
       stagger: 0.2,
-      duration: 0.5,
+      duration: 0.6,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: '.tech-panel',
+        scroller: '.container',
+        markers: true,
+        onEnter: () => {
+          gsap.to('.tech-panel--list-item', {
+            transform: 'none',
+            stagger: 0.05,
+            delay: 0.4,
+            duration: 0.2,
+            ease: 'expo.out',
+          });
+        },
+      },
     });
   }, []);
   return (

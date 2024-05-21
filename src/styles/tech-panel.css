@@ -3,9 +3,11 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  transform: translateY(100%);
 }
 
 .tech-panel--active {
+  transform-origin: bottom;
 }
 
 .tech-panel--headline,
@@ -39,11 +41,13 @@
   column-gap: 24px;
   row-gap: 24px;
   margin-top: 32px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .tech-panel--list-item {
   height: 48px;
   width: 48px;
+  transform: translateY(-400px);
 }
 
 @media screen and (min-width: 640px) {

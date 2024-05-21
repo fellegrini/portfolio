@@ -39,6 +39,8 @@ function Container({
           onToggle: (self) => {
             if (self.isActive) {
               const sectionName = section.className;
+              const sectionContainer = section.querySelector(`.${sectionName}--container`);
+              sectionContainer?.scrollTo(0, 0);
               activeSectionHook(sectionName);
             }
           },
