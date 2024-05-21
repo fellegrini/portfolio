@@ -23,7 +23,6 @@ function TechPanel({ panelData }: { panelData: PanelDataType }) {
       scrollTrigger: {
         trigger: '.tech-panel',
         scroller: '.container',
-        markers: true,
         onEnter: () => {
           gsap.to('.tech-panel--list-item', {
             transform: 'none',
