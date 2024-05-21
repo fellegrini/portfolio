@@ -5,6 +5,7 @@ import './index.css';
 import gsap from 'gsap';
 
 function About() {
+  const imgUrl = new URL('../../assets/img/profile.jpg', import.meta.url).href;
   useGSAP(() => {
     gsap.from(['.about--footer', '.about--marquee'], {
       yPercent: 100,
@@ -31,11 +32,7 @@ function About() {
           interactive features, I leverage tech to bring ideas to life.
         </p>
       </div>
-      <img
-        src='/src/assets/img/profile.jpg'
-        alt="Federico Pellegrini's profile pic"
-        className='about--image'
-      />
+      <img src={imgUrl} alt="Federico Pellegrini's profile pic" className='about--image' />
       <div className='about--footer'>
         <Year />
         <div className='about--marquee'>
