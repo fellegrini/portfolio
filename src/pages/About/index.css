@@ -12,6 +12,7 @@
   grid-area: 2 / 1 / 5 / 5;
   display: flex;
   align-items: center;
+  font-family: 'Lato', 'sans-serif';
 }
 
 .about--image {
