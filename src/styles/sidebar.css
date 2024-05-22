@@ -35,6 +35,7 @@
 .sidebar--button svg {
   height: fit-content;
   width: fit-content;
+  padding: 4px;
 }
 
 .sidebar--sc {
