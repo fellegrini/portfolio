@@ -48,8 +48,8 @@
   background-color: var(--black);
   border-radius: 50%;
   position: relative;
-  height: 92px;
-  width: 92px;
+  height: 90px;
+  width: 90px;
   flex-shrink: 0;
   right: 46px;
 }
