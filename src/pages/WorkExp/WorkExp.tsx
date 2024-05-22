@@ -41,7 +41,7 @@ const workExpData = [
     featuredTech: ['Flask', 'Jinja', 'TypeScript', 'Material UI', 'GCloud', 'Sass', 'YAML'],
     summary: [
       'Added new sections and functionalities to over 50 statically-rendered websites using JavaScript, TypeScript, Flask, and a custom CMS.',
-      "Contributed to the development and maintenance of features of a framework-agnostic library of reusable UI components based on Google's Marketing Web Standards, which reduced our developmenttimes by 50%",
+      "Contributed to the development and maintenance of features of a framework-agnostic library of reusable UI components based on Google's Marketing Web Standards, which reduced our development times by 50%",
       'Participated in the content engineering of various projects, also managing the localization (l10n) and internationalization (i18n) processes in close collaboration with producers, clients and translation vendors.',
       'Performed code reviews for both internal and external teams, including temporary contractors located at other marketing agencies.',
     ],
