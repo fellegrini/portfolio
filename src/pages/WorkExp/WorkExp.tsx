@@ -6,8 +6,11 @@ const workExpData = [
     year: '2024',
     position: 'Front-End Developer.',
     company: 'FREELANCE',
-    featuredTech: ['React', 'TypeScript', 'React Router', 'Vite', 'GSAP', 'Vercel'],
-    summary: ['Development of SPAs using React 18, React Router, Vite and GSAP 3.'],
+    featuredTech: ['React', 'TypeScript', 'React Router', 'Vite', 'GSAP', 'Vercel', 'Webflow'],
+    summary: [
+      'Developed SPAs using React 18, React Router, Vite and GSAP 3.',
+      'No-code development using Webflow.',
+    ],
   },
   {
     year: '2023',

@@ -1,0 +1,11 @@
+.projects {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.projects--title {
+  font-family: 'Playfair Display', serif;
+  font-size: 23.5vw;
+  font-weight: 900;
+}

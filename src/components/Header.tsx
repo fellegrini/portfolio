@@ -31,6 +31,8 @@ function Header({ activeSection = 'Calculating' }: { activeSection: string }) {
 
   function scrollTo(section: string) {
     const container = document.querySelector('.container');
+    const scroller = container?.querySelector(`.${section}--container`);
+    scroller?.scrollTo(0, 0);
     container?.querySelector(`.${section}`)?.scrollIntoView();
   }
 

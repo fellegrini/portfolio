@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 1440px) {
   .tech-panel--headline {
-    font-size: 6vw;
+    font-size: 5.5vw;
     max-width: 19.5vw; /* Ensures desired text wrapping */
     overflow-wrap: anywhere;
     line-height: 0.84;
@@ -86,11 +86,13 @@
 
   .tech-panel--headline-sub {
     padding-top: 0;
+    font-size: 48px;
+    line-height: 80px;
     margin-bottom: -16px;
   }
 
   .tech-panel--description {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-top: 32px;
   }
 

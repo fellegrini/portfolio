@@ -7,7 +7,7 @@ function Socials({ type }: { type: 'vertical' | 'horizontal' }) {
   return (
     <div className={`socials socials--${type}`}>
       <a
-        href='https://inkedin.com/in/fellegrini/'
+        href='https://linkedin.com/in/fellegrini/'
         className='socials--link'
         target='_blank'
         rel='noreferrer'

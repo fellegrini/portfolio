@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 1024px) {
   .about {
-    grid-template-columns: repeat(5, 1fr) 0.5fr 0.8fr 1.5fr 1fr 1.5fr 0.5fr 0.66fr;
+    grid-template-columns: repeat(5, 1fr) 0.5fr 0.8fr 1.5fr 1fr 1.5fr 0.75fr 0.66fr;
     grid-template-rows: 0.5fr 1fr 0.33fr 1.5fr 1.5fr 0.33fr 1.1fr 1.33fr;
   }
 
@@ -156,5 +156,22 @@
 
   to {
     transform: scale(1.4) translateX(-100vw) translateZ(0);
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .about {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 0.5fr) repeat(6, 1fr);
+  }
+
+  .about--text {
+    font-size: 20px;
+    line-height: 28px;
+    grid-area: 3 / 3 / 5 / 9;
+  }
+
+  .about--image {
+    grid-area: 5 / 3 / 9 / 9;
   }
 }

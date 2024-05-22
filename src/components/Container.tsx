@@ -26,21 +26,9 @@ function Container({
           end: 'bottom center',
           scroller: '.container',
           toggleActions: 'play reverse play reverse',
-          //              onEnter onLeave onEnterBack onLeaveBack
-          onEnter: () => {
-            console.log(`${section.className} has entered into the viewport`);
-          },
-          onEnterBack: () => {
-            console.log(`${section.className} has entered back into the viewport`);
-          },
-          onLeave: () => {
-            console.log(`${section.className} has left the viewport`);
-          },
           onToggle: (self) => {
             if (self.isActive) {
               const sectionName = section.className;
-              const sectionContainer = section.querySelector(`.${sectionName}--container`);
-              sectionContainer?.scrollTo(0, 0);
               activeSectionHook(sectionName);
             }
           },

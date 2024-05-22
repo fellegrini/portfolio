@@ -13,5 +13,43 @@
   -ms-overflow-style: none;
   overflow: hidden auto;
   height: 100%;
-  row-gap: 120px;
+  row-gap: 80px;
+}
+
+.workexp--container::-webkit-scrollbar {
+  display: none;
+}
+
+.workexp--container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .workexp--container {
+    padding: 240px 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .workexp--container {
+    row-gap: 120px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .workexp--container {
+    padding: 33vh 140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .workexp--container {
+    padding: 240px 80px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .workexp--container {
+    padding: 33vh 180px;
+  }
 }
