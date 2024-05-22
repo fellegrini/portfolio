@@ -5,7 +5,7 @@ import './index.css';
 import gsap from 'gsap';
 
 function About() {
-  const imgUrl = new URL('../../assets/img/profile.jpg', import.meta.url).href;
+  const imgUrl = new URL('../../assets/img/profile.webp', import.meta.url).href;
   useGSAP(() => {
     gsap.from(['.about--footer', '.about--marquee'], {
       yPercent: 100,

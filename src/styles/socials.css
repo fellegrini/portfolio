@@ -3,6 +3,19 @@
   display: flex;
 }
 
+.socials--link {
+  pointer-events: auto;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--white);
+  transform-origin: bottom bottom;
+}
+
+.socials--link:hover {
+  transform: scale(1.1);
+}
+
 .socials svg {
   height: 32px;
   width: 32px;

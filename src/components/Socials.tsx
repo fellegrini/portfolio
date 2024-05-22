@@ -6,9 +6,31 @@ import '../styles/socials.css';
 function Socials({ type }: { type: 'vertical' | 'horizontal' }) {
   return (
     <div className={`socials socials--${type}`}>
-      <LinkedinIcon />
-      <GmailIcon />
-      <GithubIcon />
+      <a
+        href='https://inkedin.com/in/fellegrini/'
+        className='socials--link'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <LinkedinIcon />
+      </a>
+      <a
+        href='mailto:fellegrini@gmail.com'
+        className='socials--link'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <GmailIcon />
+      </a>
+
+      <a
+        href='https://github.com/fellegrini'
+        className='socials--link'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <GithubIcon />
+      </a>
     </div>
   );
 }
