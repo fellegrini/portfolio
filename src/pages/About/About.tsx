@@ -1,8 +1,8 @@
+import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Geo } from '../../assets/icons/geo';
 import { Year } from '../../assets/icons/year';
 import './index.css';
-import gsap from 'gsap';
 
 function About() {
   const imgUrl = new URL('../../assets/img/profile.webp', import.meta.url).href;
