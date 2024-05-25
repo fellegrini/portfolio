@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { Geo } from '../../assets/icons/geo';
-import { Year } from '../../assets/icons/year';
+import { Geo } from '@/assets/icons/geo';
+import { Year } from '@/assets/icons/year';
 import './index.css';
 
 function About() {

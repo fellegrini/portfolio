@@ -1,6 +1,6 @@
-import { GithubIcon } from '../assets/icons/github';
-import { GmailIcon } from '../assets/icons/gmail';
-import { LinkedinIcon } from '../assets/icons/linkedin';
+import { GithubIcon } from '@/assets/icons/github';
+import { GmailIcon } from '@/assets/icons/gmail';
+import { LinkedinIcon } from '@/assets/icons/linkedin';
 import '../styles/socials.css';
 
 function Socials({ type }: { type: 'vertical' | 'horizontal' }) {

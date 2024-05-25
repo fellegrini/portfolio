@@ -1,7 +1,7 @@
+import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useState } from 'react';
-import { iconMap } from '../assets/icons/tech/map';
-import gsap from 'gsap';
+import { iconMap } from '@/assets/icons/tech/map';
 import '../styles/tech-panel.css';
 
 type PanelDataType = {

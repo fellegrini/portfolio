@@ -1,4 +1,4 @@
-import TechPanel from '../../components/TechPanel';
+import TechPanel from '@/components/TechPanel';
 import './index.css';
 
 const techPanels = [
