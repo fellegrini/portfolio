@@ -54,7 +54,6 @@ const workExpData = [
     summary: [
       'Contributed to the digitalization of all administrative procedures and government communications through the development of the Electronic Document Management System (SADE), commissioned by the Executive Branch of the City Government.',
       'Successfully deployed the first module of the platform, Single Desktop (EU), which became a tool of daily use for more than 35,000 users.',
-      'Built and maintained Coda’s web and mobile apps using React, TypeScript, Styled Components, and Next.js',
     ],
   },
 ];
