@@ -5,6 +5,20 @@ const workExpData = [
   {
     year: '2024',
     position: 'Front-End Developer.',
+    company: 'Global66',
+    featuredTech: ['Vue', 'NativeScript', 'SCSS', 'AWS'],
+    summary: [
+      'Developed cross-platform mobile app interfaces using NativeScript and Vue.',
+      `Leveraged NativeScript's capabilities to access device-specific features (e.g., camera, notifications, tracking).`,
+      'Integrated third-party APIs for financial services (e.g., payment gateways, currency exchange rates).',
+      'Optimized app performance for various mobile devices and operating systems.',
+      'Created engaging user experiences with intuitive navigation and visually appealing designs.',
+      'Troubleshot and resolved mobile app bugs and performance issues.',
+    ],
+  },
+  {
+    year: '2024',
+    position: 'Front-End Developer.',
     company: 'FREELANCE',
     featuredTech: ['React', 'TypeScript', 'React Router', 'Vite', 'GSAP', 'Vercel', 'Webflow'],
     summary: [
