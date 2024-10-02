@@ -5,7 +5,7 @@ const workExpData = [
   {
     year: '2024',
     position: 'Front-End Developer.',
-    company: 'Global66',
+    company: 'GLOBAL66',
     featuredTech: ['Vue', 'NativeScript', 'SCSS', 'AWS'],
     summary: [
       'Developed cross-platform mobile app interfaces using NativeScript and Vue.',
